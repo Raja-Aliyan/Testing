@@ -5,7 +5,7 @@ print("learning python")
 
 print("i'm a beginner","learning python")
 
-print(23)
+print(235+67+89)
 print(34+43)
 
 
