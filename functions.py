@@ -8,7 +8,7 @@ greeting("Ahmed")
 result=greeting("cristian")
 print(result)   # it will give none(means things are empty or return nothing) bcz there no no return type in the function and it only prints when it is called directly or through variable as cristaian
 greeting("amna")   
-
+greeting("aliyaaannn")
 print("---NEW FUNCTION---")
 def dept(name,department):
     print("welcome" ,name)
