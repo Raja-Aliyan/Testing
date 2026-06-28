@@ -122,6 +122,10 @@ print(product)
 
 
 
+#for x in 25:
+   #print(x)            it will give error bcz integers are not iterable 
+
+
 friends =['taylor','alex','eli']
 for friend in friends:
    print("Hi ",friend)
@@ -222,3 +226,141 @@ greeting="hello"
 for c in greeting:
    print("the character is:",c)
    
+
+
+
+
+
+
+
+
+
+greeting="hello"
+for i in range(len(greeting)):
+   print(i)
+
+
+
+   # Can do this from while loop
+
+greeting="hello"
+index=0
+while index<len(greeting):
+   print(greeting[index])
+   index=index+1
+
+
+
+
+
+
+
+
+                  # By using index slicing(strings ka parta ko alehda alehda likhna)
+
+greeting = "Hello"
+index = 0
+while index<len(greeting):
+   print(greeting[index:index+1])
+   index+=1
+
+
+
+       # [start:end]
+
+
+string1 = "Greetings, Earthlings"
+print(string1[0])   # Prints “G”
+print(string1[4:8]) # Prints “ting”
+print(string1[11:]) # Prints “Earthlings”  [11:] it means till end 
+print(string1[:5])  # Prints “Greet”
+
+
+
+# Prints “Earthlings” again
+print(string1[-10:])     # jab - ma value hongi to start end sa karna or start 1 sa hoga like earthlings ma start s sa hoga or sa ka index -1 hoga or phir aage chalta jaiga 
+ 
+
+
+       # STRIDE ARGUMENT(Ye batata hai ke har kitne characters skip karke next character lena hai.)
+       #string[start:end:stride]
+text="python"
+print(text[0:6:1]) 
+print(text[0::2]) # 2 ka gap
+print(text[-2::-1]) # negative stride(reverse string) start=-6 end=blank   stride=-1 peecha chalna
+
+            # DEFAULT VALUES OF STRIDE 
+
+# 1) agar starting value nai dala ga to pyhton usa default ma 0 set kardega
+# 2) agar ending value nahi dala ga to python ussa default length(string)  set kardega 
+# 3) agar stride means gap nai dala to python ussa default 1 set kardega 
+# 4) agar text[::-1] agar aesa reverse ma to to python starting ko text[len(text)-1::-1] default set karega
+
+
+             # list comprehension
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [x ** 2 for x in numbers]
+print(squared_numbers)
+
+
+
+
+
+
+
+
+         # JOINING STRINGS
+         #Bohot Important Rule  .join() sirf strings ko join karta hai.
+
+# in the first you can simply use the + or , method
+print("hello"+ " world") 
+
+  # you can use the join function too:
+
+words=["I" ," LOVE"," PYTHON"]
+print("".join(words))
+print("-" .join(words))
+print("," .join(words))
+print("".join(words))
+
+folders = ["Users", "Ali", "Documents"]
+print("/".join(folders))
+
+
+
+
+
+
+
+
+
+                # APPEND:
+                  #append() ek list method hai jo list ke END mein ek naya item add karta hai
+
+fruits = ["Apple", "Banana"]
+
+fruits.append("Orange")
+print(fruits)
+
+
+
+
+
+
+
+
+numbers=[1,2,3,4,5]
+squares = []
+
+for x in numbers:
+    squares.append(x ** 2)
+
+print(squares)
+
+
+
+# through list comprehension
+squares = [x ** 2 for x in numbers]
+
+print(squares)
