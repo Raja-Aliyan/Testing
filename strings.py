@@ -1,39 +1,41 @@
-num=[x for x in range(10)]
-print(*num)
+str1="python"
+str2='language'    # can write in  '' or "" or """ """
+print(str1+str2)      # this is called concatenating
 
-square=[x**2 for x in range(1,11)]
-print(square)
+#str3="learning'        
+     # it will give an syntax error
 
-
-even=[x for x in range(1,21) if x%2==0]
-print(even)
-
-
-names=['ali','hassan','hussain']
-even=[x.upper() for x in names]
-print(even)
+print("example"*3)
+print(len("00000000000000 cat"))
 
 
 
-word="education"
-vowel="aeiou"
-found_vowel=[char for char in word.lower() if char in vowel]
-print(found_vowel)
+name = "Jaylen"
+print(name[1])
 
+
+
+text = "Random string with a lot of characters"
+print(text[-1])
+print(text[-2])
 
 
 
 
-
-numbers=[5,12,5,66,4,6]
-find=[x for x in numbers if x>10]
-print(find)
+color = "Orange"
+color[1:4]
 
 
 
 
-numbers=[x*x if x%2==0 else x for x in range(1,20) ]
-print(numbers)
+fruit = "Pineapple"
+print(fruit[:4])
+print(fruit[4:])
+
+
+
+
+
 
 
 
@@ -170,3 +172,14 @@ print(text.strip("*o")) # yaha par * and o
 
 message="The number of times e occurs in this string is 4"
 print(message.count("e"))
+
+
+
+
+
+                        # isnumeric()  yeh check krta hay "Kya is string ke saare characters numeric (numbers) hain?"
+
+number="12434"
+print(number.isnumeric())
+num="a2323"
+print(num.isnumeric())
